@@ -3,6 +3,9 @@
          apply/3,
          apply/4,
          apply/5]).
+-export([spawn_tracer/0,
+         start_trace/3,
+         stop_trace/2]).
 
 -define(RESOLUTION, 1000). %% us
 -record(dump, {stack=[], us=0, acc=[]}). % per-process state
